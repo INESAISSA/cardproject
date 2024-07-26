@@ -35,7 +35,7 @@ for (let MinusBtn of MinusButtons) {
 //total price
 function TotalPrice() {
     let quantity = document.querySelectorAll(".quantity")
-    let price = document.querySelectorAll(".unit-price")
+    let price = document.querySelectorAll(".price")
     let sum = 0
 
     for (let i = 0; i < quantity.length; i++) {
@@ -48,6 +48,7 @@ TotalPrice()
 
 //like
 let heartButtons = document.querySelectorAll(".fa-heart")
+console.log(heartButtons);
 for (let heartBtn of heartButtons) {
     heartBtn.addEventListener("click", function () {
         heartBtn.classList.toggle("liked")
